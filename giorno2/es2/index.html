@@ -1,0 +1,26 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+
+<body>
+    <div class="complete">
+        <div class="form">
+            <label >Name: <input placeholder="name" id="name" type="text"></label>
+            <label>Email: <input placeholder="email" id="email" type="text"></label>
+            <span id="error"></span>
+            <button onclick="publishToTable()">Submit</button>
+        </div>
+        <div id="tables">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

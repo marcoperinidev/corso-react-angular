@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    text-align: center;
+}
+
+.row1{
+    margin: 30px 10px;
+    padding: 5px;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    
+}
+
+.row2{
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.btn1, .btn2{
+    width: 60px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgb(99, 182, 255);
+    transition: all ease-in-out 0.3s;
+}
+
+.btn1:hover, .btn2:hover{
+    background-color: rgb(50, 118, 255);
+    font-size: small;
+}
