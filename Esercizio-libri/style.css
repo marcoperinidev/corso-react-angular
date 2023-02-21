@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-input, input{
+    width: 40%;
+    position: relative;
+    display: grid;
+    align-items: center;
+    margin: 2px 10px 3px 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#aggiungi{
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#aggiungi:hover {
+    background-color: #3e8e41;
+  }
+
+input:focus{
+    background-color: rgba(26, 144, 255, 0.118);
+    font-weight: bold;
+}
+
+/* Stile per la tabella */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Stile per l'intestazione della tabella */
+  thead {
+    background-color: #f1f1f1;
+  }
+  
+  thead th {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  /* Stile per il corpo della tabella */
+  tbody td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Stile per le righe pari della tabella */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Stile per le righe dispari della tabella */
+  tbody tr:nth-child(odd) {
+    background-color: #fff;
+  }
+ 
+  
