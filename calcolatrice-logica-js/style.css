@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.total-container{
+    width: 100%;
+    height: 100vh;
+    background: url("https://c4.wallpaperflare.com/wallpaper/552/555/783/mr-robot-fsociety-wallpaper-preview.jpg") ;
+    /* no repeat image background */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+}
