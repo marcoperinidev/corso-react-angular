@@ -1,4 +1,5 @@
-let equal = document.querySelector('#equal');
-if(equal == null || equal == undefined) {
-    return equal;
-}
+
+// let equal = document.querySelector('#equal');
+// if(equal.input == null || equal.input == undefined) {
+//     return equal.input;
+// }
