@@ -1,7 +1,7 @@
 const btnAggiungi = document.getElementById("aggiungi");
 
 function aggiungiRisultato() {
-    // Creare un array con i valori dei campi input
+  
     const inputValues = [
       document.getElementById("id").value,
       document.getElementById("titolo").value,
@@ -12,18 +12,31 @@ function aggiungiRisultato() {
       document.getElementById("isbn").value
     ];
   
-    // Creare un nuovo elemento tr
+   //nuovo elemento tr
     const tr = document.createElement("tr");
   
-    // Creare un nuovo elemento td per ogni valore dei campi input
     inputValues.forEach(function(value) {
       const td = document.createElement("td");
       const text = document.createTextNode(value);
       td.appendChild(text);
       tr.appendChild(td);
     });
-  
-    // Aggiungere l'elemento tr al corpo della tabella
+    
+
+    const tdRimuovi = document.createElement("td");
+
+    const btnRimuovi = document.createElement("button");
+    btnRimuovi.innerText = "Rimuovi";
+
+    btnRimuovi.addEventListener("click", function() {
+      // Rimuovere la riga corrispondente
+      tr.remove();
+    });
+
+    tdRimuovi.appendChild(btnRimuovi);
+
+    tr.appendChild(tdRimuovi);
+
     const tbody = document.querySelector("#risultati tbody");
     tbody.appendChild(tr);
   }
@@ -34,7 +47,6 @@ function aggiungiRisultato() {
 //     const containerRisultati = document.createElement("div");
 //     containerRisultati.id = "container-risultati";
   
-//     // Creare un array valori campi input
 //     const inputValues = [
 //       document.getElementById("id").value,
 //       document.getElementById("titolo").value,
@@ -45,7 +57,6 @@ function aggiungiRisultato() {
 //       document.getElementById("isbn").value
 //     ];
   
-//     // nuovo elemento p per ogni valore dei campi input
 //     inputValues.forEach(function(value) {
 //       const p = document.createElement("p");
 //       const text = document.createTextNode(value);
@@ -64,6 +75,7 @@ btnAggiungi.addEventListener("click", function() {
         aggiungiRisultato();
       
 });
+
 
 //--------------------------------------------------------------------------------------
       //FUNZIONA ----------------------------
