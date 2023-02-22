@@ -1,7 +1,7 @@
 const btnAggiungi = document.getElementById("aggiungi");
 
 function aggiungiRisultato() {
-  
+   //prendo tutti gli input -> in array
     const inputValues = [
       document.getElementById("id").value,
       document.getElementById("titolo").value,
@@ -21,10 +21,8 @@ function aggiungiRisultato() {
       td.appendChild(text);
       tr.appendChild(td);
     });
-    
 
     const tdRimuovi = document.createElement("td");
-
     const btnRimuovi = document.createElement("button");
     btnRimuovi.innerText = "Rimuovi";
 
@@ -41,6 +39,11 @@ function aggiungiRisultato() {
     tbody.appendChild(tr);
   }
 
+  // event listener click
+btnAggiungi.addEventListener("click", function() {
+  aggiungiRisultato();
+
+});
 //prova1-----------------
 // function aggiungiRisultato() {
 //     // div  "container-risultati"
@@ -69,13 +72,6 @@ function aggiungiRisultato() {
 //     form.appendChild(containerRisultati);
 //   }
 //fine prova1-----------------
-
-// event listener click
-btnAggiungi.addEventListener("click", function() {
-        aggiungiRisultato();
-      
-});
-
 
 //--------------------------------------------------------------------------------------
       //FUNZIONA ----------------------------
