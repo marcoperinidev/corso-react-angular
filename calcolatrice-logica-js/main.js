@@ -107,6 +107,15 @@ const calculate = (firstOperand, secondOperand, operator) => {
     return secondOperand;
 };
 
+//reset calculator
+const resetCalculator = () => {
+    calculator.displayValue = '0';
+    calculator.firstOperand = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.operator = null;
+};
+
+
 
 
 
