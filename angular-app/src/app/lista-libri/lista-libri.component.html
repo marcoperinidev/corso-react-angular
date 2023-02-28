@@ -1,0 +1,17 @@
+<h3>Lista dei Libri</h3>
+
+<!-- Nome: {{ libri[0].titolo }} <br>
+Autore: {{ libri[0].autore }} <br>
+Editore: {{ libri[0].editore }} <br> -->
+
+
+<p>Seleziona Libro</p>
+
+<ul>
+  <li *ngFor="let libro of libri">
+    {{ libro.titolo }}
+    <button type="button" (click)="selezionaLibro(libro)">Seleziona</button>
+  </li>
+</ul>
+
+<app-libro-dettagli *ngIf="libroSelezionato" [libro]="libroSelezionato"></app-libro-dettagli>
